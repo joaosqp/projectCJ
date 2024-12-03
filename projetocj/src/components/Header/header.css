@@ -1,0 +1,39 @@
+/* Estilo básico para a barra de navegação */
+.menu {
+    background-color: #282c34; /* Cor de fundo escura */
+    padding: 10px 20px; /* Espaçamento interno */
+    display: flex;
+    align-items: center; /* Alinha os itens no centro */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para dar efeito 3D */
+  }
+  
+  .titulo {
+    display: flex;
+    align-items: center;
+    color: #fff; /* Cor do texto */
+    font-size: 24px;
+  }
+  
+  .titulo label {
+    margin-right: 10px; /* Espaço entre o título e o link */
+    font-weight: bold;
+  }
+  
+  .nomeProjeto {
+    color: #61dafb; /* Cor do link */
+    font-size: 20px;
+    text-decoration: none; /* Remove o sublinhado */
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  /* Efeito de hover para o link */
+  .nomeProjeto:hover {
+    text-decoration: underline;
+    color: #21a1f1; /* Cor do link quando hover */
+  }
+  
