@@ -1,39 +1,88 @@
-/* Estilo básico para a barra de navegação */
-.menu {
-    background-color: #282c34; /* Cor de fundo escura */
-    padding: 10px 20px; /* Espaçamento interno */
-    display: flex;
-    align-items: center; /* Alinha os itens no centro */
-    justify-content: space-between; /* Espaçamento entre os itens */
-    position: sticky;
-    top: 0;
+/* header.css */
+
+/* Estilo geral do cabeçalho */
+header {
+  background-image: linear-gradient(#3ff7079d, #a2cc0bb4, #e2d407bb);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título e nome do projeto */
+.titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nomeProjeto {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nomeProjeto:hover {
+  color: #f2d024; /* Amarelo vibrante */
+}
+
+/* Barra de pesquisa */
+.pesquisa {
+  flex-grow: 1;
+  max-width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  margin: 0 15px;
+}
+
+.pesquisa:focus {
+  border-color: #a2cc0b; /* Verde-claro */
+}
+
+/* Navegação */
+.navigation {
+  display: flex;
+  gap: 15px; /* Espaçamento entre os links */
+}
+
+/* Links de navegação */
+.navigation a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover dos links */
+.navigation a:hover {
+  background-color: #e2d407bb; /* Amarelo translúcido */
+  color: #000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .pesquisa {
     width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para dar efeito 3D */
+    max-width: none;
   }
-  
-  .titulo {
-    display: flex;
-    align-items: center;
-    color: #fff; /* Cor do texto */
-    font-size: 24px;
-  }
-  
-  .titulo label {
-    margin-right: 10px; /* Espaço entre o título e o link */
-    font-weight: bold;
-  }
-  
-  .nomeProjeto {
-    color: #61dafb; /* Cor do link */
-    font-size: 20px;
-    text-decoration: none; /* Remove o sublinhado */
-    cursor: pointer;
-    font-weight: 500;
-  }
-  
-  /* Efeito de hover para o link */
-  .nomeProjeto:hover {
-    text-decoration: underline;
-    color: #21a1f1; /* Cor do link quando hover */
-  }
-  
+}
