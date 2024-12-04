@@ -9,6 +9,13 @@ import Ganhadores from './pages/Ganhadores';
 import MeusSorteios from './pages/MeusSorteios';
 import Produtos from './pages/Produtos';
 
+import Comocomprar from './pages/Footer/Comocomprar';
+import Aempresa from './pages/Footer/AEmpresa';
+import Privacidade from './pages/Footer/PrivacidadeeSegurança';
+import Trocas from './pages/Footer/Trocas';
+import Acompanharpedido from './pages/Footer/AcompanharPedido';
+import Politicadeentrega from './pages/Footer/PoliticadeEntrega';
+
 function RoutesApp() {
   return (
     <BrowserRouter>
@@ -19,6 +26,12 @@ function RoutesApp() {
         <Route path="/Ganhadores" element={<Ganhadores />} />
         <Route path="/MeusSorteios" element={<MeusSorteios />} />
         <Route path="/Produtos" element={<Produtos />} />
+        <Route path="/comocomprar" element={<Comocomprar />} />
+        <Route path="/aempresa" element={<Aempresa />} />
+        <Route path="/privacidade" element={<Privacidade />} />
+        <Route path="/trocas" element={<Trocas />} />
+        <Route path="/acompanharpedido" element={<Acompanharpedido />} />
+        <Route path="/politicadeentrega" element={<Politicadeentrega />} />
       </Routes>
       <Footer />
     </BrowserRouter>
