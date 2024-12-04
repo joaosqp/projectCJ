@@ -1,14 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
 
+import Header from './components/Header';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Ganhadores from './pages/Ganhadores';
 import MeusSorteios from './pages/MeusSorteios';
 import Produtos from './pages/Produtos';
 
+import Footer from './components/Footer';
 import Comocomprar from './pages/Footer/Comocomprar';
 import Aempresa from './pages/Footer/AEmpresa';
 import Privacidade from './pages/Footer/PrivacidadeeSegurança';
