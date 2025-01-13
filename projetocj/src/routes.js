@@ -29,7 +29,7 @@ function RoutesApp() {
   return (
     <BrowserRouter>
       <Routes>
-        {/*Pagina Login isolada do Layout padrão*/}
+        {/*Paginas isoladas do Layout padrão*/}
         <Route path="Login" element={<Login />} />
 
         {/*Paginas com Layout padrão*/}
