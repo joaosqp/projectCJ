@@ -1,0 +1,10 @@
+.Home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nomeProjeto {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2rem;
+}
