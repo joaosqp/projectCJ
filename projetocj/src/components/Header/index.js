@@ -13,7 +13,7 @@ export const Header = () => {
         <header>
             <div className="menu">
                 <div className="titulo">
-                    <a className="nomeProjeto" onClick={toHome}>Projeto CJ</a>
+                    <a className="nomeProjeto" onClick={toHome}>Home</a>
                 </div>
             </div>
             <div>
