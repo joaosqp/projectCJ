@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import images from '../../images/projeto.png';
 import './header.css';
 
 export const Header = () => {
@@ -12,11 +13,11 @@ export const Header = () => {
     return (
         <header>
             <div className="menu">
-                <div className="titulo">
-                    <a className="nomeProjeto" onClick={toHome}>Home</a>
-                </div>
+                <button onClick={toHome}>
+                    <img src={images} alt='Projeto' />
+                </button>
             </div>
-            <div>
+            <div className="pesquisa">
                 <input className="pesquisa" type="text" placeholder="Pesquisar" />
             </div>
             <div className="login">
