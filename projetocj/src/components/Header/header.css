@@ -4,7 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, #a8e063, #56ab2f);
+  background: linear-gradient(to bottom, #ffffff, #c9fab2);
   padding: 10px 20px;
   font-family: Arial, sans-serif;
   border-bottom: 2px solid #dcdcdc;
