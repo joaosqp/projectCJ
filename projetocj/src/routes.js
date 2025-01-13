@@ -15,24 +15,35 @@ import Trocas from './pages/Footer/Trocas';
 import Acompanharpedido from './pages/Footer/AcompanharPedido';
 import Politicadeentrega from './pages/Footer/PoliticadeEntrega';
 
+function DefaultLayout({ children }) {
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
+}
+
 function RoutesApp() {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Ganhadores" element={<Ganhadores />} />
-        <Route path="/MeusSorteios" element={<MeusSorteios />} />
-        <Route path="/Produtos" element={<Produtos />} />
-        <Route path="/comocomprar" element={<Comocomprar />} />
-        <Route path="/aempresa" element={<Aempresa />} />
-        <Route path="/privacidade" element={<Privacidade />} />
-        <Route path="/trocas" element={<Trocas />} />
-        <Route path="/acompanharpedido" element={<Acompanharpedido />} />
-        <Route path="/politicadeentrega" element={<Politicadeentrega />} />
+        {/*Pagina Login isolada do Layout padrão*/}
+        <Route path="Login" element={<Login />} />
+
+        {/*Paginas com Layout padrão*/}
+        <Route path="/" element={<DefaultLayout><Home /></DefaultLayout>} />
+        <Route path="/Ganhadores" element={<DefaultLayout><Ganhadores /></DefaultLayout>} />
+        <Route path="/MeusSorteios" element={<DefaultLayout> <MeusSorteios /> </DefaultLayout>} />
+        <Route path="/Produtos" element={<DefaultLayout> <Produtos /> </DefaultLayout>} />
+        <Route path="/comocomprar" element={<DefaultLayout> <Comocomprar /> </DefaultLayout>} />
+        <Route path="/aempresa" element={<DefaultLayout> <Aempresa /> </DefaultLayout>} />
+        <Route path="/privacidade" element={<DefaultLayout> <Privacidade /> </DefaultLayout>} />
+        <Route path="/trocas" element={<DefaultLayout> <Trocas /> </DefaultLayout>} />
+        <Route path="/acompanharpedido" element={<DefaultLayout> <Acompanharpedido /> </DefaultLayout>} />
+        <Route path="/politicadeentrega" element={<DefaultLayout> <Politicadeentrega /> </DefaultLayout>} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }
